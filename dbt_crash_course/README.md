@@ -130,26 +130,24 @@ This project demonstrates a complete ELT pipeline using dbt (Data Build Tool) an
     console.cloud.google.com/bigquery
     ```
     On the page: click Add new project, give the project the name dbt-crash-course, and click Create.
-    
     Select the new project. You will see the project ID on the left as dbt-crash-course-yourcode. Copy this value.
     
     In VS Code, open your .dbt folder and the profiles.yml file.
     Change the project parameter to: dbt-crash-course-yourcode
-    
     (Your code will be different from mine.)
     
     In the Cloud Console: click the hamburger menu (top-left) → IAM & Admin → Service Accounts.
     Create a new service account:
     
-    Type your name
-    
-    Click Create and Continue
-    
-    Select Role: Owner
-    
-    Click Continue → Done
-    
-    Then select the service account you just created → Keys → Add Key → Create new key → choose JSON → Create.
+      Type your name
+      
+      Click Create and Continue
+      
+      Select Role: Owner
+      
+      Click Continue → Done
+      
+      Then select the service account you just created → Keys → Add Key → Create new key → choose JSON → Create.
     
     A .json file will download. Paste this file into your VS Code .dbt folder (where your profiles.yml is).
     Rename the file to: dbt-crash-course.json
@@ -211,6 +209,7 @@ This project demonstrates a complete ELT pipeline using dbt (Data Build Tool) an
     dbt docs serve
     ```
     A popup will open showing the dbt documentation website where you can explore your models and lineage.
+   
 
 4. You have your own Google Cloud + dbt setup. If you wan to runit in  the future you can just run these 2 command in the terminal:
     ```bash
