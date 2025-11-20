@@ -46,10 +46,10 @@ This project demonstrates a complete ELT pipeline using dbt (Data Build Tool) an
 ### 4. Documentation
 
       dbt automatically generates interactive documentation using:
-      ```bash
+```bash
       dbt docs generate
       dbt docs serve
-      ```
+```
       
       This produces a browsable UI showing:
       
