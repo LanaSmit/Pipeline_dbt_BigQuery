@@ -11,10 +11,16 @@
 
 with source_data as (
 
+<<<<<<< HEAD
         select 1 as id, 'a' as first_name
         union all
         select 2 as id, 'b' as first_name
 
+=======
+    select 1 as id
+    union all
+    select null as id
+>>>>>>> aa8cd2a06d4d351f3364c40aefe4935a53bf2351
 
 )
 

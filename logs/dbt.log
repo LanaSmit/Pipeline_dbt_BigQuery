@@ -89,6 +89,7 @@ Happy modeling!
 [0m09:38:09.091955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73b7c6643f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73b79c993c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73b79b4d7710>]}
 [0m09:38:09.092287 [debug] [MainThread]: Flushing usage events
 [0m09:38:10.206070 [debug] [MainThread]: An error was encountered while trying to flush usage events
+<<<<<<< HEAD
 [0m09:48:46.252290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x718133376840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x718134de4b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x718132277f80>]}
 
 
@@ -150,3 +151,5 @@ Happy modeling!
 [0m09:48:54.573828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7181367b3470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71810876cc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x718107738a10>]}
 [0m09:48:54.574187 [debug] [MainThread]: Flushing usage events
 [0m09:48:55.719605 [debug] [MainThread]: An error was encountered while trying to flush usage events
+=======
+>>>>>>> aa8cd2a06d4d351f3364c40aefe4935a53bf2351
