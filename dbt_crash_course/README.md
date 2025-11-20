@@ -3,77 +3,47 @@
 This project demonstrates a complete ELT pipeline using dbt (Data Build Tool) and Google BigQuery. The purpose of the pipeline is to show how raw data is loaded into BigQuery, transformed into clean analytical models using dbt, and validated using automated tests.
 
 ## Pipeline Architecture
+
 ### 1. Extract & Load
 
-  Raw datasets are loaded directly into Google BigQuery as the first step.
-  This includes:
-  
-  Seed files (e.g., stadium_cleaned.csv) which are ingested into BigQuery using dbt seed
-  
-  Starter datasets created automatically during the course setup
-  
-  Customers dataset loaded into the dbt_crash_course dataset
+Raw datasets are loaded directly into Google BigQuery as the first step.  
+This includes:
+
+- Seed files (e.g., stadium_cleaned.csv) ingested using `dbt seed`
+- Starter datasets created automatically during course setup
+- Customers dataset loaded into the `dbt_crash_course` dataset
 
 ### 2. Transform with dbt
 
-      dbt is used to transform the raw tables into clean, analysis-ready models.
-      Transformations include:
-      
-      - Creating SQL models such as customers.sql
-      
-      - Applying materializations (e.g., table)
-      
-      - Renaming and cleaning columns
-      
-      - Structuring data for easier analysis
-      
-      - Organizing models under the models/ directory
-      
-      - dbt ensures all transformations are modular, reproducible, and version-controlled.
+dbt is used to transform raw tables into clean, analysis-ready models.  
+Transformations include:
+
+- Creating SQL models such as `customers.sql`
+- Applying materializations (e.g., `table`)
+- Renaming and cleaning columns
+- Structuring data for easier analysis
+- Organizing models under the `models/` directory
+
+dbt ensures all transformations are modular, reproducible, and version-controlled.
 
 ### 3. Testing
 
-      Automated quality checks are applied using dbt:
-      
-      - unique tests
-      
-      - not_null tests
-      
-      - Schema-level validation using schema.yml
-      
-      This ensures the transformed tables meet data quality expectations before being used downstream.
+Automated quality checks are applied using dbt:
+
+- `unique` tests  
+- `not_null` tests  
+- Schema-level validation using `schema.yml`
+
+This ensures the transformed tables meet data quality expectations before being used downstream.
 
 ### 4. Documentation
 
-      dbt automatically generates interactive documentation using:
+dbt automatically generates interactive documentation using:
+
 ```bash
-      dbt docs generate
-      dbt docs serve
-```
-      
-      This produces a browsable UI showing:
-      
-      - Model lineage
-      
-      - Column descriptions
-      
-      - Relationships between tables
-      
-      - Data flow across the entire pipeline
+dbt docs generate
+dbt docs serve
 
-### Data Flow Summary
-
-    1. Raw Data → BigQuery:
-    Data is uploaded or seeded into BigQuery under the project dataset dbt_crash_course.
-    
-    2. BigQuery → dbt Models:
-    dbt applies transformations stored under /models.
-    
-    3. dbt → BigQuery (Transformed Tables):
-    dbt materializes views or tables back into BigQuery based on the configuration.
-    
-    4. Tests & Documentation:
-    dbt runs data tests and generates interactive documentation to explore the pipeline structure.
 
 # Setup Instructions:
 
