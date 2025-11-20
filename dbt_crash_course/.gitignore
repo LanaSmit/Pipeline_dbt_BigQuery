@@ -1,0 +1,21 @@
+
+
+dbt_packages/
+
+
+# Ignore dbt credentials
+.dbt/
+*.json
+*.yml
+*.txt
+*.identifier
+# But allow schema files inside models
+!models/
+!models/**/*.yml
+
+# Ignore compiled artifacts
+target/
+logs/
+
+# VS Code junk
+.vscode/
