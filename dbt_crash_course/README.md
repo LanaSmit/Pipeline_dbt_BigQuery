@@ -195,17 +195,8 @@ This project demonstrates a complete ELT pipeline using dbt (Data Build Tool) an
     In the terminal:
     ```bash
     dbt test
-    ```
-    Then:
-    ```bash
     dbt run
-    ```
-    Then:
-    ```bash
     dbt docs generate
-    ```
-    Then:
-    ```bash
     dbt docs serve
     ```
     A popup will open showing the dbt documentation website where you can explore your models and lineage.
