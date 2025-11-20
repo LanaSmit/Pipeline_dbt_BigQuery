@@ -43,7 +43,7 @@ dbt automatically generates interactive documentation using:
 ```bash
 dbt docs generate
 dbt docs serve
-
+```
 
 # Setup Instructions:
 
