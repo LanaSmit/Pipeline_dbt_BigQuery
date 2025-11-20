@@ -8,7 +8,7 @@ dbt_packages/
 *.json
 *.yml
 *.identifier
-
+*.txt
 # But allow schema files inside models
 !models/
 !models/**/*.yml
