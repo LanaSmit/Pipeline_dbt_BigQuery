@@ -139,13 +139,13 @@ This project demonstrates a complete ELT pipeline using dbt (Data Build Tool) an
     In the Cloud Console: click the hamburger menu (top-left) → IAM & Admin → Service Accounts.
     Create a new service account:
     
-      Type your name
+      - Type your name
       
-      Click Create and Continue
+      - Click Create and Continue
       
-      Select Role: Owner
+      - Select Role: Owner
       
-      Click Continue → Done
+      - Click Continue → Done
       
       Then select the service account you just created → Keys → Add Key → Create new key → choose JSON → Create.
     
