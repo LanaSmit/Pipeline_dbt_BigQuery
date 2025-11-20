@@ -9,20 +9,20 @@ This project demonstrates a complete ELT pipeline using dbt (Data Build Tool) an
 Raw datasets are loaded directly into Google BigQuery as the first step.  
 This includes:
 
-- Seed files (e.g., stadium_cleaned.csv) ingested using `dbt seed`
+- Seed files (e.g., stadium_cleaned.csv) ingested using dbt seed
 - Starter datasets created automatically during course setup
-- Customers dataset loaded into the `dbt_crash_course` dataset
+- Customers dataset loaded into the dbt_crash_course dataset
 
 ### 2. Transform with dbt
 
 dbt is used to transform raw tables into clean, analysis-ready models.  
 Transformations include:
 
-- Creating SQL models such as `customers.sql`
-- Applying materializations (e.g., `table`)
+- Creating SQL models such as customers.sql
+- Applying materializations (e.g., table)
 - Renaming and cleaning columns
 - Structuring data for easier analysis
-- Organizing models under the `models/` directory
+- Organizing models under the models/ directory
 
 dbt ensures all transformations are modular, reproducible, and version-controlled.
 
@@ -30,9 +30,9 @@ dbt ensures all transformations are modular, reproducible, and version-controlle
 
 Automated quality checks are applied using dbt:
 
-- `unique` tests  
-- `not_null` tests  
-- Schema-level validation using `schema.yml`
+- unique tests  
+- not_null tests  
+- Schema-level validation using schema.yml
 
 This ensures the transformed tables meet data quality expectations before being used downstream.
 
