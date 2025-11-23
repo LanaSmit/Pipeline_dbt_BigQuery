@@ -2,6 +2,19 @@
 
 This project demonstrates a complete ELT pipeline using dbt (Data Build Tool) and Google BigQuery. The purpose of the pipeline is to show how raw data is loaded into BigQuery, transformed into clean analytical models using dbt, and validated using automated tests.
 
+### E — Extract
+
+Raw data comes from CSV files (seeds), starter data from the dbt tutorial, or external sources.
+
+### L — Load
+
+The raw data gets loaded into Google BigQuery.
+This creates the raw tables you see in BigQuery.
+
+### T — Transform (dbt)
+
+dbt transforms raw tables into clean, analytics-ready models using SQL files you write.
+
 ## Pipeline Architecture
 
 ### 1. Extract & Load
