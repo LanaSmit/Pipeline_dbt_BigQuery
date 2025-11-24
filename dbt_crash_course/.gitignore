@@ -6,7 +6,7 @@ dbt_packages/
 # Ignore dbt credentials
 .dbt/
 *.json
-*.yml
+
 *.identifier
 *.txt
 # But allow schema files inside models
