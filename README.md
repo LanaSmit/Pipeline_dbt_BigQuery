@@ -1,6 +1,6 @@
 # Pipeline_dbt_BigQuery
 
-A CSV file and internal dbt template are loaded into BigQuery using dbt seed, then used dbt to transform that raw data into clean analytical tables, and finally viewed the lineage and documentation using dbt docs.
+A CSV file and internal dbt template are loaded into BigQuery using dbt seed, then used dbt to transform that raw data into clean analytical tables, and finally viewed the documentation using dbt docs.
 
 ### Extract
 
