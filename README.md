@@ -4,7 +4,7 @@ A CSV file are loaded into BigQuery using dbt seed, then used dbt to transform t
 
 ### Extract
 
-Raw data comes from CSV files (seeds), starter data from the dbt tutorial, or external sources.
+Raw data comes from CSV files (seeds) and starter data from the dbt tutorial.
 
 ### Load
 
